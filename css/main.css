@@ -1,164 +1,94 @@
-
-@import "compass";
-@import "breakpoint";
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
-
-.cards {
+body {
+  background: #00a5f7;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: box;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-align: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 15px;
-  padding: 1.5%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.card {
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}s
+.container {
+  width: 300px;
+  height: 200px;
   position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  background: #fefff9;
-  color: #363636;
-  text-decoration: none;
-  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
   border-radius: 4px;
+  
 }
-@media (max-width: 700px) {
-  .card {
-    width: 100%;
-  }
-}
-@media (min-width: 700px) {
-  .card {
-    max-width: 320px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-  .card:nth-child(even) {
-    margin-right: 0;
-  }
-}
-@media (min-width: 980px) {
-  .card:nth-child(even) {
-    margin-right: 20px;
-  }
-  .card:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-.card span {
-  display: block;
-}
-.card .card-summary {
-  padding: 5% 5% 3% 5%;
-}
-.card .card-header {
-  position: relative;
-  height: 175px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.15);
-  background-blend-mode: overlay;
-  -moz-border-radius: 4px 4px 0 0;
-  -webkit-border-radius: 4px;
-  border-radius: 4px 4px 0 0;
-}
-.card .card-header:hover, .card .card-header:focus {
-  background-color: rgba(255, 255, 255, 0);
-}
-.card .card-title {
-  background: rgba(157, 187, 63, 0.85);
-  padding: 3.5% 0 2.5% 0;
-  color: white;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
+.card {
   width: 100%;
-}
-.card .card-title h3 {
-  font-size: 1.2em;
-  line-height: 1.2;
-  padding: 0 3.5%;
-  margin: 0;
-}
-.card .card-meta {
-  max-height: 0;
-  overflow: hidden;
-  color: #666;
-  font-size: .78em;
-  text-transform: uppercase;
+  height: 100%;
   position: absolute;
-  bottom: 5%;
-  padding: 0 5%;
-  -moz-transition-property: max-height;
-  -o-transition-property: max-height;
-  -webkit-transition-property: max-height;
-  transition-property: max-height;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
 }
-.card:hover, .card:focus {
-  background: white;
-  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #47525d;
 }
-.card:hover .card-title, .card:focus .card-title {
-  background: rgba(157, 187, 63, 0.95);
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-.card:hover .card-meta, .card:focus .card-meta {
-  max-height: 1em;
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-img {
-  max-width: 100%;
-}
-
-body {
-  background: #f0f0f0;
-  font-size: 17px;
-  line-height: 1.4;
-  font-family: 'Jaldi', sans-serif;
-}
-
-* {
-  -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
-  -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
-  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
-  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
+/* li {
+	display: inline-block;
 }
