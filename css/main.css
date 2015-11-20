@@ -1,18 +1,26 @@
 
 
 body {
- background-color: #b4b4b4;
+  background-image: none;
+background-position: 0% 0%;
+background-size: auto auto;
+background-repeat: repeat;
+background-origin: padding-box;
+background-clip: border-box;
+background-attachment: scroll;
+background-color: #000000;
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+    h1 {
+    color: green;
+
 }
 
-li {
-    float: left;
+.nav {
+	background-color: #1f22b8;
+
 }
 
 
@@ -30,6 +38,7 @@ li {
    margin-left: 10px;
    margin-bottom: 10px;
    box-shadow: 10px 10px 5px grey;
+   background-image: url("images/yatzer.jpg");   
 }
 
 .card__front,
@@ -48,9 +57,8 @@ li {
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
 }
-
 .card__front {
-  background-color: #222;
+  background-color: #FFFFFF;
 }
 
 .card__back {
