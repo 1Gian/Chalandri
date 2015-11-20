@@ -1,6 +1,24 @@
 
+
+body {
+ background-color: #b4b4b4;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+
+
 #container{
-	position: center ;
+	 
     margin-left: 200px ;
 }
 .card {
@@ -11,6 +29,7 @@
   text-align: center;
    margin-left: 10px;
    margin-bottom: 10px;
+   box-shadow: 10px 10px 5px grey;
 }
 
 .card__front,
@@ -31,7 +50,7 @@
 }
 
 .card__front {
-  background-color: #ff5078;
+  background-color: #222;
 }
 
 .card__back {
