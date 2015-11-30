@@ -4,11 +4,12 @@ body {
 }
 .card-container {
   cursor: pointer;
-  height: 150px;
+  height: 300px;
   -webkit-perspective: 600;
           perspective: 600;
   position: relative;
-  width: 150px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 .card {
   height: 100%;
