@@ -1,7 +1,11 @@
 
+body {
+  background-color: #283593;
+}
 .nav { background-color: #000;
     position: relative;
     padding-top: -10px;
+     height: 300px;
     font-family: 'Poiret One', cursive;
   }
 
@@ -13,7 +17,7 @@
      height: 300px;
      padding-left: 15px;
      margin-left: 15px;
-     box-shadow: #F50057;
+     /*box-shadow: #F50057;*/
   
   }
 
@@ -23,6 +27,11 @@
   padding-bottom: 25%;
   width: 25%;
   text-align: center;
+}
+
+.card-reveal{
+  background-color: #009688;
+ 
 }
 
 
